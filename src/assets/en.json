@@ -1,0 +1,42 @@
+{
+  "banner": {
+    "title": "A Software Developer with a Deep Understanding of Security Protocols and Practices",
+    "tagline": "A problem is just a puzzle waiting to be solved, and I don't stop until I crack it!",
+    "resume": "Download My Resume",
+    "contact": "Get In Touch",
+    "filename": "Bahar Paydar"
+  },
+  "about": {
+    "title": "Who Am I?",
+    "content": "I am a software developer and user interface designer. I learned C/C++ and Java as part of my bachelor degree; and later I learned Python and Web Technologies through self-study. I have kept my knowledge and my skills up to date by continously reading documents and developing mini applications. I also attended the Master of Science(MSc) program in Information Security at Amirkabir University of Technology (Tehran Polytechnic) which I left without completing my thesis due to personal reasons. Eventhough I didn't receive my degree, I gained invaluable insight into security protocols and practices used in software development."
+  },
+  "skills": {
+    "title": "My Skills",
+    "content": [
+      "Clean Code",
+      "Database Design",
+      "API Design & Development",
+      "Front-end Web Development",
+      "Mobile Application Development",
+      "UI Design"
+    ]
+  },
+  "projects": {
+    "title": "My Projects",
+    "content": [
+      {
+        "icon": "/graphics/planly.png",
+        "title": "PLANLY",
+        "description": "A daily planner to plan your days, easily and intuitively!",
+        "link": {
+          "label": "Read More",
+          "href": "https://github.com/solacode-ahw/planly"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me"
+  },
+  "footer": "Last Updated on May 5th, 2025"
+}

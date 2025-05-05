@@ -1,0 +1,96 @@
+@use  'index'
+
+#lang-wrapper
+  display: flex
+  gap: 8px
+  padding: 4px 8px
+  align-items: center
+  &.rtl
+    flex-flow: row-reverse wrap
+    justify-content: left
+  &.ltr
+    flex-flow: row wrap
+    justify-content: right
+  .lang-button
+    padding: 4px 8px
+    border-bottom: 1px solid transparent
+    background-color: transparent
+    border: none
+    cursor: pointer
+    &.active-lang
+      cursor: default
+      border-bottom: 1px solid index.$primary-900
+#main-logo
+  display: block
+  object-fit: cover
+  width: 250px
+  height: auto
+  margin: 0px auto
+
+#banner
+  padding: 48px 32px
+  display: flex
+  flex-direction: column
+  gap: 32px
+  align-items: stretch
+  #banner-actions
+    display: flex
+    flex-flow: row wrap
+    gap: 16px 48px
+    .action-link
+      padding: 12px 20px
+      border-radius: 8px
+      border: 2px solid index.$primary-500
+      box-sizing: border-box
+
+.segment
+  padding: 32px
+  display: flex
+  flex-direction: column
+  align-items: stretch
+  gap: 16px
+  p
+    text-align: justify
+#skills-wrapper
+  display: flex
+  flex-flow: row wrap
+  gap: 12px 32px
+  justify-content: flex-start
+  align-items: flex-start
+  .skill-item
+    display: flex
+    flex-direction: row
+    gap: 8px
+    align-items: center
+    img
+      width: 16px
+      height: 16px
+.project-item
+  display: flex
+  flex-direction: row
+  gap: 16px
+  .project-icon
+    width: 100px
+    height: 100px
+  .project-detail
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 0px
+    padding: 8px 0px
+    .project-more-icon
+      width: 16px
+      height: 16px
+      vertical-align: middle
+#contact-wrapper
+  display: flex
+  flex-flow: row wrap
+  gap: 12px 48px
+  justify-content: l
+
+footer
+  background-color: index.$primary-900
+  padding: 16px 32px
+  p
+    color: index.$accent-500
+    text-align: center

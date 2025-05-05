@@ -1,0 +1,81 @@
+// FONT DEFINITIONS
+$font-base-path: '/fonts'
+@font-face
+  font-family: 'zain'
+  font-weight: 800
+  src: url('#{$font-base-path}/Zain-ExtraBold.ttf') format('ttf')
+@font-face
+  font-family: 'zain'
+  font-weight: 700
+  src: url('#{$font-base-path}/Zain-Bold.ttf') format('ttf')
+@font-face
+  font-family: 'zain'
+  font-weight: 400
+  src: url('#{$font-base-path}/Zain-Regular.ttf') format('ttf')
+@font-face
+  font-family: 'zain'
+  font-weight: 300
+  src: url('#{$font-base-path}/Zain-Light.ttf') format('ttf')
+
+// TYPOGRAPHY CLASSES
+.display-small
+  font-family: 'zain'
+  font-weight: 800
+  font-size: 32px
+  line-height: 48px
+
+.heading-large
+  font-family: 'zain'
+  font-weight: 700
+  font-size: 24px
+  line-height: 36px
+
+.body-large
+  font-family: 'zain'
+  font-weight: 400
+  font-size: 20px
+  line-height: 30px
+.body-medium
+  font-family: 'zain'
+  font-weight: 400
+  font-size: 16px
+  line-height: 24px
+.body-small
+  font-family: 'zain'
+  font-weight: 300
+  font-size: 14px
+  line-height: 21px
+
+.button-typography
+  font-family: 'zain'
+  font-weight: 700
+  font-size: 16px
+  line-height: 24px
+
+
+// COLOR DEFINITIONS
+$primary-500: #2E4052
+$primary-900: #161F27
+$accent-500: #FFE66D
+$gray-100: #F5F5F4
+
+// COLOR RELATED CLASSES
+.color-primary900
+  color: $primary-900
+.color-primary500
+  color: $primary-500
+
+// GENERAL RULES
+*
+  margin: 0px
+a
+  text-decoration: none
+body
+  padding: 0px
+  background-color: $gray-100
+main
+  background-color: $gray-100
+  box-shadow: 0px 0px 8px rgba($primary-500,0.5)
+  max-width: 750px
+  min-height: 100vh
+  margin: 0px auto
