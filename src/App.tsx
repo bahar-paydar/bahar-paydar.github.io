@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { dir } from './lib';
 
 import en from './assets/en.json';
 import fa from './assets/fa.json';
@@ -22,7 +23,6 @@ const content: {
   'en': en,
   'fa': fa,
 };
-const rtls = [ 'fa' ];
 
 function App() {
   const [lang, setLang] = useState('en');
@@ -43,14 +43,14 @@ function App() {
     if(lang!==new_lang){
       setLang(new_lang);
       localStorage.setItem('solacode_locale',new_lang);
-      document.dir = rtls.includes(new_lang) ? 'rtl' : 'ltr';
+      document.dir = dir(new_lang);
     }
   };
 
   return (
     <>
       <header>
-        <section aria-label='Language / زبان' id='lang-wrapper' className={rtls.includes(lang) ? 'rtl' : 'ltr'}>
+        <section aria-label='Language / زبان' id='lang-wrapper' className={dir(lang)}>
           <button onClick={()=>change_language('en')} className={`body-small color-primary900 lang-button ${lang==='en'?'active-lang':''}`}>English</button>
           <button onClick={()=>change_language('fa')} className={`body-small color-primary900 lang-button ${lang==='fa'?'active-lang':''}`}>فارسی</button>
         </section>
@@ -85,7 +85,7 @@ function App() {
           <section className='project-detail'>
             <h4 className='heading-small color-primary900'>{project.title}</h4>
             <p className='body-medium color-primary900'>{project.description}</p>
-            <a className='button-typography color-primary500' href={project.link.href} target='blank'>{project.link.label} <img className='project-more-icon' src={`/icons/arrow-${rtls.includes(lang) ? 'left' : 'right'}.svg`} /></a>
+            <a className='button-typography color-primary500' href={project.link.href} target='blank'>{project.link.label} <img className='project-more-icon' src={`/icons/more-${dir(lang)}.svg`} /></a>
           </section>
         </section> )}
       </section>
