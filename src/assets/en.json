@@ -8,7 +8,7 @@
   },
   "about": {
     "title": "Who Am I?",
-    "content": "I am a software developer and user interface designer. I learned C/C++ and Java as part of my bachelor degree; and later I learned Python and Web Technologies through self-study. I have kept my knowledge and my skills up to date by continously reading documents and developing mini applications. I also attended the Master of Science(MSc) program in Information Security at Amirkabir University of Technology (Tehran Polytechnic) which I left without completing my thesis due to personal reasons. Eventhough I didn't receive my degree, I gained invaluable insight into security protocols and practices used in software development."
+    "content": "I am a software developer and user interface designer. I learned C/C++ and Java as part of my bachelor degree; and later I learned Python and Web Technologies through self-study. I have kept my knowledge and my skills up to date by continuously reading documents and developing mini applications. I also attended the Master of Science(MSc) program in Information Security at Amirkabir University of Technology (Tehran Polytechnic) which I left without completing my thesis due to personal reasons. Even though I didn't receive my degree, I gained invaluable insight into security protocols and practices used in software development."
   },
   "skills": {
     "title": "My Skills",
@@ -30,7 +30,7 @@
         "description": "A daily planner to plan your days, easily and intuitively!",
         "link": {
           "label": "Read More",
-          "href": "https://github.com/solacode-ahw/planly"
+          "href": "https://github.com/bahar-paydar/planly"
         }
       }
     ]
@@ -38,5 +38,5 @@
   "contact": {
     "title": "Contact Me"
   },
-  "footer": "Last Updated on May 5th, 2025"
+  "footer": "Last Updated on August 5th, 2025"
 }
