@@ -54,7 +54,7 @@ function App() {
           <button onClick={()=>change_language('en')} className={`body-small color-primary900 lang-button ${lang==='en'?'active-lang':''}`}>English</button>
           <button onClick={()=>change_language('fa')} className={`body-small color-primary900 lang-button ${lang==='fa'?'active-lang':''}`}>فارسی</button>
         </section>
-        <img alt='SolaCode' src='/graphics/solacode.png' id='main-logo' />
+        <img alt='A photo of Bahar Paydar' src='/graphics/bp.jpg' id='main-photo' />
       </header>
 
       <section id='banner'>
