@@ -61,7 +61,7 @@ function App() {
         <h1 className='display-small color-primary500'>{content[lang].banner.title}</h1>
         <h2 className='body-large color-primary500'>{content[lang].banner.tagline}</h2>
         <section id='banner-actions'>
-          <a className='action-link button-typography color-primary500' download={`${content[lang].banner.filename}.pdf`} href={`/resume/${lang}.pdf`} target='blank'>{content[lang].banner.resume}</a>
+          <a className='action-link button-typography color-primary500' download={`${content[lang].banner.filename}.pdf`} href={`/Bahar Paydar.pdf`} target='blank'>{content[lang].banner.resume}</a>
           <a className='action-link button-typography color-primary500' href="#contact-wrapper">{content[lang].banner.contact}</a>
         </section>
       </section>
