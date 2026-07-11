@@ -59,16 +59,19 @@ $font-base-path: '/fonts'
 
 
 // COLOR DEFINITIONS
-$primary-500: #2E4052
-$primary-900: #161F27
-$accent-500: #FFE66D
-$gray-100: #F5F5F4
+$primary: #156B63
+$secondary: #53B687
+$accent: #E66F52
+$dark: #30403F
+$light: #F5F8F7
 
 // COLOR RELATED CLASSES
-.color-primary900
-  color: $primary-900
-.color-primary500
-  color: $primary-500
+.color-dark
+  color: $dark
+.color-primary
+  color: $primary
+.color-secondary
+  color: $secondary
 
 // GENERAL RULES
 *
@@ -77,10 +80,10 @@ a
   text-decoration: none
 body
   padding: 0px
-  background-color: $gray-100
+  background-color: $light
 main
-  background-color: $gray-100
-  box-shadow: 0px 0px 8px rgba($primary-500,0.5)
+  background-color: $light
+  box-shadow: 0px 0px 8px rgba($dark,0.5)
   max-width: 750px
   min-height: 100vh
   margin: 0px auto

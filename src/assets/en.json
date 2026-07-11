@@ -8,7 +8,8 @@
   },
   "about": {
     "title": "Who Am I?",
-    "content": "I am a software developer and user interface designer. I learned C/C++ and Java as part of my bachelor degree; and later I learned Python and Web Technologies through self-study. I have kept my knowledge and my skills up to date by continuously reading documents and developing mini applications. I also attended the Master of Science(MSc) program in Information Security at Amirkabir University of Technology (Tehran Polytechnic) which I left without completing my thesis due to personal reasons. Even though I didn't receive my degree, I gained invaluable insight into security protocols and practices used in software development."
+    "content": ["I'm a software developer and UI designer with a passion for building intuitive digital experiences. My journey into tech began with a mathematics degree, where I studied C/C++ and Java, which I've since complemented through self-directed learning in Python and web technologies. I stay current with industry developments by regularly engaging with technical documentation and building side projects.",
+    "I pursued a Master's degree in Information Security at Amirkabir University of Technology, where I developed deep expertise in security protocols and best practices—knowledge that has become integral to my development approach. While I didn't complete the program, the experience fundamentally shaped how I think about secure, resilient software architecture."]
   },
   "skills": {
     "title": "My Skills",
@@ -32,11 +33,19 @@
           "label": "Read More",
           "href": "https://github.com/bahar-paydar/planly"
         }
+      },{
+        "icon": "/graphics/website.png",
+        "title": "Personal Website",
+        "description": "In-progress personal website, written with FastAPI and Next.js",
+        "link": {
+          "label": "Read More",
+          "href": "https://github.com/bahar-paydar/personal-website"
+        }
       }
     ]
   },
   "contact": {
     "title": "Contact Me"
   },
-  "footer": "Last Updated on June 21st, 2026"
+  "footer": "Last Updated on July 12th, 2026"
 }

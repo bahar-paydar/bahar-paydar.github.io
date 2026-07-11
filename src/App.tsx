@@ -29,11 +29,11 @@ function App() {
 
   useEffect(()=>{
     const getLanguage = async () => {
-      let locale = localStorage.getItem('solacode_locale');
+      let locale = localStorage.getItem('bp_locale');
       if(locale && Object.keys(content).includes(locale)){
         change_language(locale);
       } else {
-        localStorage.setItem('solacode_locale','en');
+        localStorage.setItem('bp_locale','en');
       }
     };
     getLanguage();
@@ -42,7 +42,7 @@ function App() {
   const change_language = (new_lang: string) => {
     if(lang!==new_lang){
       setLang(new_lang);
-      localStorage.setItem('solacode_locale',new_lang);
+      localStorage.setItem('bp_locale',new_lang);
       document.dir = dir(new_lang);
     }
   };
@@ -51,46 +51,48 @@ function App() {
     <>
       <header>
         <section aria-label='Language / زبان' id='lang-wrapper' className={dir(lang)}>
-          <button onClick={()=>change_language('en')} className={`body-small color-primary900 lang-button ${lang==='en'?'active-lang':''}`}>English</button>
-          <button onClick={()=>change_language('fa')} className={`body-small color-primary900 lang-button ${lang==='fa'?'active-lang':''}`}>فارسی</button>
+          <button onClick={()=>change_language('en')} className={`body-small color-dark lang-button ${lang==='en'?'active-lang':''}`}>English</button>
+          <button onClick={()=>change_language('fa')} className={`body-small color-dark lang-button ${lang==='fa'?'active-lang':''}`}>فارسی</button>
         </section>
-        <img alt='A photo of Bahar Paydar' src='/graphics/bp.jpg' id='main-photo' />
+        <img alt='A photo of Bahar Paydar' src='/graphics/bp.png' id='main-photo' />
       </header>
 
       <section id='banner'>
-        <h1 className='display-small color-primary500'>{content[lang].banner.title}</h1>
-        <h2 className='body-large color-primary500'>{content[lang].banner.tagline}</h2>
+        <h1 className='display-small color-dark'>{content[lang].banner.title}</h1>
+        <h2 className='body-large color-dark'>{content[lang].banner.tagline}</h2>
         <section id='banner-actions'>
-          <a className='action-link button-typography color-primary500' download={`${content[lang].banner.filename}.pdf`} href={`/Bahar Paydar.pdf`} target='blank'>{content[lang].banner.resume}</a>
-          <a className='action-link button-typography color-primary500' href="#contact-wrapper">{content[lang].banner.contact}</a>
+          <a className='action-link button-typography color-secondary' download={`${content[lang].banner.filename}.pdf`} href={`/Bahar Paydar.pdf`} target='blank'>{content[lang].banner.resume}</a>
+          <a className='action-link button-typography color-secondary' href="#contact-wrapper">{content[lang].banner.contact}</a>
         </section>
       </section>
       <section className='segment'>
-        <h3 className='heading-large color-primary900 segment-title'>{content[lang].about.title}</h3>
-        <p className='body-medium color-primary900'>{content[lang].about.content}</p>
+        <h3 className='heading-large color-dark segment-title'>{content[lang].about.title}</h3>
+        {content[lang].about.content.map ( (paragraph: string) => <p className='body-medium color-dark'>
+          {paragraph}
+        </p> )}
       </section>
       <section className='segment'>
-        <h3 className='heading-large color-primary900 segment-title'>{content[lang].skills.title}</h3>
+        <h3 className='heading-large color-dark segment-title'>{content[lang].skills.title}</h3>
         <section id='skills-wrapper'>
           {content[lang].skills.content.map( (skill: string) => <section className='skill-item' key={skill}>
             <img alt='' src='/icons/bookmark.svg' />
-            <p className='body-medium color-primary900'>{skill}</p>
+            <p className='body-medium color-dark'>{skill}</p>
           </section> )}
         </section>
       </section>
       <section className='segment'>
-        <h3 className='heading-large color-primary900 segment-title'>{content[lang].projects.title}</h3>
+        <h3 className='heading-large color-dark segment-title'>{content[lang].projects.title}</h3>
         {content[lang].projects.content.map( (project: ProjectItemType) => <section className='project-item'>
           <img className='project-icon' src={project.icon} />
           <section className='project-detail'>
-            <h4 className='heading-small color-primary900'>{project.title}</h4>
-            <p className='body-medium color-primary900'>{project.description}</p>
-            <a className='button-typography color-primary500' href={project.link.href} target='blank'>{project.link.label} <img className='project-more-icon' src={`/icons/more-${dir(lang)}.svg`} /></a>
+            <h4 className='heading-small color-dark'>{project.title}</h4>
+            <p className='body-medium color-dark'>{project.description}</p>
+            <a className='button-typography color-secondary' href={project.link.href} target='blank'>{project.link.label} <img className='project-more-icon' src={`/icons/more-${dir(lang)}.svg`} /></a>
           </section>
         </section> )}
       </section>
       <section className='segment'>
-        <h3 className='heading-large color-primary900 segment-title'>{content[lang].contact.title}</h3>
+        <h3 className='heading-large color-dark segment-title'>{content[lang].contact.title}</h3>
         <section id='contact-wrapper' dir='ltr'>
           <img src='/graphics/mail.png' />
           <img src='/graphics/phone.png' />
